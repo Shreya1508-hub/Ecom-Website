@@ -124,6 +124,25 @@ body{
     color:#9c1b73;
     font-weight:bold;
 }
+.stats{
+    display:flex;
+    gap:10px;
+    margin:15px;
+}
+
+.box{
+    flex:1;
+    background:white;
+    padding:15px;
+    text-align:center;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
 </style>
 </head>
 
@@ -176,6 +195,22 @@ body{
 </div>
 
 <div class="card">
+    <div class="stats">
+    <div class="box">
+        <h3>24</h3>
+        <p>Orders</p>
+    </div>
+
+    <div class="box">
+        <h3>8</h3>
+        <p>Wishlist</p>
+    </div>
+
+    <div class="box">
+        <h3>12</h3>
+        <p>Coupons</p>
+    </div>
+</div>
     <div class="section-title">Support</div>
 
     <div class="menu-item">
